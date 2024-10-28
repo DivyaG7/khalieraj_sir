@@ -23,9 +23,39 @@
         <p>Director, Author, and Advocate for Cybersecurity and National Development </p>
         <div class="d-flex align-items-center justify-content-between gap-5">
             <button>EXPLORE MY WORKS</button>
-            <button>BOOK A CONSULTATION</button>
+            <button data-bs-toggle="modal" data-bs-target="#consultationModal">BOOK A CONSULTATION</button>
         </div>
     </header>
+
+    <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="consultationModalLabel">Book a Consultation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contact form goes here -->
+                    <form id="consultationForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- Header section end -->
 
     <!-- counter section start -->
