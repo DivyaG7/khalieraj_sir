@@ -1,0 +1,264 @@
+*{
+    font-family: "Jost", sans-serif;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.header p{
+    font-size: 18px;
+    color: white;
+}
+
+/* Header section style */
+
+.header{
+    background-image: url('assets/bg.png');
+    background-position: center;
+    background-size: cover;
+    max-width: 100vw;
+    overflow: hidden;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.header h1, h3, h5, p{
+    color: white;
+}
+
+.header > div{
+    width: 50%;
+}
+
+.header button{
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    border: none;
+}
+
+.header button:hover{
+    background: #2F72C8;
+    color: white;
+}
+
+/* Counter section style */
+
+.counter-section{
+    background-image: url('assets/counter_img.png');
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+    background-position: center; /* Centers the image */
+    background-size: cover; /* Ensures the image covers the section while maintaining aspect ratio */
+    max-width: 100%; /* Make the section span the full width of the page */
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-section .counter-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 50%;
+}
+
+/* About section style */
+
+.about-column{
+    background-color: #BED8FA;
+    color: black;
+    border-radius: 5px;
+}
+
+.about-column:hover{
+    background-color: #05479D;
+    color: white;
+}
+
+.about-column:hover p{
+    color: white;
+}
+
+.about-column:hover .hr{
+    border: .1px solid white;
+}
+
+.about-column p{
+    color: black;
+    font-size: 13px;
+}
+
+.about-section .hr{
+    box-sizing: border-box;
+    width: 100%;
+    border: .1px solid black;
+}
+
+.about-column button{
+    border: none;
+    background: #BED8FA;
+    color: #1653A3;
+    font-size: 14px;
+}
+
+
+.about-column:hover button{
+    background: #05479D;
+    color: white;
+}
+
+
+/* Award section style */
+
+.award-section{
+    width: 100%;
+    overflow: hidden;
+}
+
+.award-section p{
+    color: black;
+}
+
+.award-section .mission{
+    background-color: #1653A3;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+
+.award-section .vision{
+    background-color:  #3080E6;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+
+/* Blog section style */
+
+.blog-box {
+    position: relative;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.blog-title {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #1653A3;
+}
+
+.blog-description {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 5px;
+    color: #666;
+}
+
+.queue-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.queue-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.queue-item .blog-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1653A3;
+}
+
+.queue-item .blog-description {
+    font-size: 12px;
+    color: #666;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* Media section style */
+
+.media{
+    width: 100%;
+    overflow: hidden;
+}
+
+.media .media-row {
+    margin: 0;
+}
+
+.media .media-col {
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+}
+
+.media .media-inner-row {
+    margin: 0;
+}
+
+.media .media-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.media .position-relative {
+    position: relative;
+}
+
+
+.media .media-text {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.media .col-12:hover .media-overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 30px; /* Adjust as needed */  
+    color: black;
+    background-color: #F9D142; /* Semi-transparent background */
+    padding: 4px 8px;
+    font-size: 14px; 
+}
+
+/* Footer section style */
+
+.footer{
+    background: #15519C;
+}
